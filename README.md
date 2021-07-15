@@ -11,3 +11,8 @@ The base scene from which the pieces are imported is: /cena_pecas/wedo_piecesv1.
 The buttons_blender_25082017_documentado.py code should be run in the python console within blender. Then a palette with the tools will be created.
 
 The results of renders and assemblies can be seen in the folder "sistema de montagens resultado"
+
+*In the code remember to change the lines so that the address of the files is correct for your machine
+
+
+NEXT STEPS: Make the plugin interface all in Web Interface, and the conection with blender in a API restful running in a local server.
