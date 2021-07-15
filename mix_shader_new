@@ -1,0 +1,22 @@
+print("----------------------------")
+import bpy
+
+material_list_raw= bpy.data.materials
+material_list=[]
+i=0
+while (i<len(material_list_raw)):
+    mat=str(material_list_raw[i])
+    mat=mat[23:]
+    mat=mat[:-3]
+    material_list.append(mat)
+    i=i+1
+
+i=0
+while(i<len(material_list)):
+    mat_new=material_list[i]
+    print(mat_new)
+    bpy.data.materials[mat_new].node_tree.nodes['Mix Shader'].inputs['Fac'].default_value = 0.7
+    i=i+1
+    
+    #bpy.data.material[mat_new].node_tree.nodes['Mix Shader'].inputs['Fac'].default_value=0.6
+    
